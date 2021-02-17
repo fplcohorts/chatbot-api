@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatbotUI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     
+</head>
+<body>
+<div class="Chatbox">
+    <div class="container">
+        <div class="msg-header">
+            <div class="msg-header-img">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="header-icons">
+                <img class="dashicon" src="images/dash.png" alt="">
+            </div>
+        </div>
+        <div class="chat-page">
+            <div class="msg-inbox">
+                <div class="chats">
+                    <div class="msg-page">
+                        <div class="received-chats">
+                            <div class="recieved-msg">
+                                <div class="recieved-msg-inbox">
+                                  <p>Hello ! You can ask me anything
+                                       if you need any sort of help</p>
+                                       <span>01.59 AM</span>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="special-chats">
+                            <div class="special-msg">
+                                <div class="special-msg-inbox">
+                                  <p>Or choose any</p>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outgoing-chats ">
+                            <div class="outgoing-msg">
+                                <div class="outgoing-msg-inbox">
+                                  <p>What are today's classes ?</p>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outgoing-chats ">
+                            <div class="outgoing-msg">
+                                <div class="outgoing-msg-inbox">
+                                  <p>What assignments do i have to submit today ?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="msg-bottom">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Let me know today's routine" style="border-width: 0px;">
+                    <div class="chatbot-send-button">Send</div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Logo-box">
+    <img class="chatbot-logo" src="images/bot.png" alt="">
+    
+</div>
+</body>
+</html>
