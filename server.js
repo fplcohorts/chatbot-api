@@ -9,8 +9,6 @@ const User = require('./model/user');
 
 var currentUser = new User(); 
 module.exports = currentUser;
-currentUser.setName("Ishan");
-console.log(currentUser.getName());
 var port = process.env.PORT || 81;        // set our port
 
 var router = express.Router();              // get an instance of the express Router
