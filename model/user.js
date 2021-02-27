@@ -2,10 +2,10 @@ const mysql = require('mysql');
 const currentUser = require('../server');
 const connection = mysql.createPool({
     connectionLimit : 10,
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'stud'
+    host: 'us-cdbr-east-03.cleardb.com',
+    user: 'b5ffb42577cafa',
+    password: 'e7f2e138',
+    database: 'heroku_861dfac9619bb68'
   });
 
 function User(id,email, name,phone,pass) {       // Accept name and age in the constructor
@@ -55,7 +55,7 @@ User.prototype.getPhone = function(pass){
 }
 
 User.prototype.verifyPass = function(res,pvtAns){
-      const query = 'SELECT COUNT(*) FROM stud.records where Email = "'+this.email+'" AND Name = "'+this.name+'" AND Mobile = "'+this.phone+'" AND Id = '+this.id+' AND Password = "'+this.password+'"';    
+      const query = 'SELECT COUNT(*) FROM records where Email = "'+this.email+'" AND Name = "'+this.name+'" AND Mobile = "'+this.phone+'" AND Id = '+this.id+' AND Password = "'+this.password+'"';    
     console.log(query);
     connection.query(query, (err,rows) => {
         console.log("passverify");
@@ -91,7 +91,7 @@ User.prototype.verify = function(res){
     //     database: 'stud'
     // });
     
-    const query = 'SELECT COUNT(*) FROM stud.records where Email = "'+this.email+'" AND Name = "'+this.name+'" AND Mobile = "'+this.phone+'" AND Id = '+this.id+'';    
+    const query = 'SELECT COUNT(*) FROM records where Email = "'+this.email+'" AND Name = "'+this.name+'" AND Mobile = "'+this.phone+'" AND Id = '+this.id+'';    
             console.log(query);
             // // var final_result = JSON.stringify(connection.query(query)).match(/(\d)/); 
             connection.query(query, 
