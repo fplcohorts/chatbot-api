@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             lst[0].scrollTop = lst[0].scrollHeight;
             var textcal = textfield.value;
             textfield.value = "";
-            const response = await fetch('http://localhost:81/api?text='+ textcal, {
+            const response = await fetch('https://offbeat-ccu-website.herokuapp.com:81/api?text='+ textcal, {
                 method: 'POST',
                 //   "text": textfield.value}, // string or object
                 headers: {
