@@ -10,7 +10,7 @@ routes.post('/', function(req, res, next) {
     console.log(req.query.text);
     console.log(JSON.stringify(currentUser));
     const options = {
-        url: 'http://localhost:5005/webhooks/rest/webhook',
+        url: 'https://chatbot-test-ishan2.herokuapp.com/webhooks/rest/webhook',
         method: 'POST',
         headers: {
           'Accept': 'application/json',
